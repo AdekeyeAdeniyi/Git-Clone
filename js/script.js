@@ -9,17 +9,21 @@ window.addEventListener('load', function(){
     document.addEventListener('click', function(e){
         e.preventDefault();
 
-        addList.classList.remove('show');
-        profileList.classList.remove('show');
+        if(e.target.dataset.filter == undefined){
+            profileList.classList.remove('show');
+            addList.classList.remove('show');
+        }
 
         if(e.target.dataset.filter == 'profileList'){
             profileList.classList.toggle('show');
-
+            addList.classList.remove('show');
         }
 
         if(e.target.dataset.filter == 'addList'){
             addList.classList.toggle('show');
+            profileList.classList.remove('show');
         }
+
     });
 
     humberToggle.addEventListener('click', function(e){
