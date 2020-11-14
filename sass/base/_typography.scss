@@ -1,0 +1,15 @@
+
+p{
+    line-height: 1.7;
+    margin: 0;
+}
+
+a{
+    color: $text-color;
+    font-size: $text-sm;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+

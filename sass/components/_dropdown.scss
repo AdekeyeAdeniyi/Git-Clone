@@ -1,0 +1,97 @@
+.dropdown{
+    background-color: $white;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 4px 0;
+    position: absolute;
+    box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
+    transition: all 0.6s;
+
+    &::before{
+        content:'';
+        position: absolute;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid $white;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    &-user{
+        margin: 0 16px;
+        padding: 3px 0;
+        font-size: $text-md;
+        cursor: pointer;
+
+        .user{
+            font-weight: 600;
+        }
+    }
+
+    &-status{
+        color: $text-color-light;
+        font-size: $text-sm;
+        margin: 0 16px;
+        border-radius: 6px;
+        padding: 4px 8px;
+        border: 1px solid lighten($border-color, 45%);
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+
+        &:hover{
+            color: $secondary;
+        }
+
+        .iconify{
+            font-size: 20px;
+        }
+    }
+
+    &-menu{
+        list-style: none;
+
+        li{
+            width: 16rem;
+            padding: 4px 8px 4px 16px;
+
+            &:hover > a{
+                color: $white;
+            }
+            &:hover{
+                background-color: $secondary;
+            }
+        }
+
+        &-list{
+            font-size: $text-md;
+            color: $border-color;
+            display: block;
+        }
+    }
+
+    &-add{
+        left: -74px;
+        top: 33px;
+        display: none;
+
+        &::before{
+            left: 106px;
+            top: -9px;
+        }
+    }
+
+    &-profile{
+        top: 33px;
+        left: -112px;
+        display: none;
+
+        &::before{
+            left: 118px;
+            top: -9px;
+        }
+    }
+}

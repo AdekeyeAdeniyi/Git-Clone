@@ -1,0 +1,243 @@
+.navigation{
+    background-color: $primary;
+
+    &-contents{
+        padding: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__detail{
+            display: flex;
+            align-items: center;
+
+            @include respond(tab-portrait){
+                display: none;
+            }
+
+            .logo{
+                margin-right: 1.6rem;
+
+            }
+            
+            a{
+
+                .navigation-brand{
+                    font-size: 3.2rem;
+                    color: $white;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $border-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &-menulist{
+        display: flex;
+        align-items: center;
+
+        form{
+            margin-right: 2rem;
+
+            label{
+                background-color: transparent;
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                padding: 4px 10px;
+                display: flex;
+                align-items: center;
+
+                .form-control{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: $text-sm;
+                    color: $white;
+                    margin-right: 12px;
+                    width: 100%;
+
+                    &__lg{
+                        transition: all .2s linear;
+                        width: 20rem;
+
+                        &:focus {
+                            width: 40rem;
+                           
+        
+                            @include respond(tab-landscape){
+                                width: 25rem;
+                            } 
+                        }
+                    }
+                }
+
+                input::placeholder{
+                    color:$text-color-light;
+                }
+
+            }
+        }
+
+        &-item{
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+
+            &__links:link,
+            &__links:visited{
+                font-size: $text-sm;
+                font-weight: 600;
+                color: $white;
+            }
+            &__links:hover,
+            &__links:active{
+                color: $text-color;
+            }
+        }
+    }
+
+    
+    &-icons{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        position: relative;
+
+        &__avatar{
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            .profile-picture{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
+
+            &:hover > .iconify{
+                color: $border-color;
+            }
+        }
+
+        &__plus{
+
+            &:hover > .iconify{
+                color: $border-color;
+            }
+        }
+
+        &--lg{
+            @include respond(tab-portrait){
+                display: none;
+            } 
+        }
+
+        .caret{
+            color: $white;
+            font-size: 9px;
+            cursor: pointer;
+        }
+
+        .icons{
+            color: $white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .caret:hover,
+        .icons:hover{
+            color: $border-color;
+        }
+    }
+
+    &-md{
+        &-menu{
+            display: none;
+
+            @include respond(tab-portrait){
+                display: block;
+            }
+
+        }
+
+    }
+
+    .md-logo,
+    .md-icons{
+        color: $white;
+        font-size: 3.2rem;
+        color: $white;
+        cursor: pointer;
+
+        &:hover{
+            color: $border-color;
+        }
+    }
+
+}
+
+.navigation{
+    &-md{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0 12px;
+        margin-top: 8px;
+        width: 100%;
+        gap: 0;
+        transform: all .5s linear;
+
+        .navigation-menulist-item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 0;
+        }
+        
+        form,
+        label{
+            width: 100%;
+        }
+
+
+
+        a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .profile-picture{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+            }
+
+            .user-name,
+            .logout{
+                font-size: $text-md;
+                color: $white;
+                font-weight: 600;
+
+                &:hover{
+                    color: $text-color;
+                } 
+            }
+
+            .iconify{
+                font-size: $text-md;
+                color: $white;
+            }
+
+        }
+
+        .log{
+            padding-bottom: 16px;
+        }
+    }
+
+}

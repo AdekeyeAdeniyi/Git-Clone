@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Repositories</title>
+    <meta name="description" content="Github Repositories" />
+    <meta name="keywords" content="Github, Repositories, Adeniyi" />
+    <meta name="author" content="Adeniyi" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://api.iconify.design/octicon:mark-github-16.svg?color=white&height=20" type="image/x-icon">
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="container">
+                <div class="navigation-contents">
+                    <div class="navigation-contents__detail">
+                        <a herf="index.html" alt="logo" class="logo">
+                            <span class="iconify navigation-brand" data-icon="octicon:mark-github-16"></span>
+                        </a>
+                        <div class="navigation-menulist">
+                            <form class="form" method="post">
+                                <label for="search" class="search">
+                                    <input type="text" class="form-control form-control__lg" name="search" placeholder="Search or jump to ..." />
+                                    <img src="https://github.githubassets.com/images/search-key-slash.svg" class="search-icons" alt="icon" />
+                                </label>
+                            </form>
+                            <ul class="navigation-menulist-item">
+                                <li><a href="#" class="navigation-menulist-item__links" style="display: none;">Dashboard</a></li>
+                                <li><a href="#" class="navigation-menulist-item__links">Pulls requests</a></li>
+                                <li><a href="#" class="navigation-menulist-item__links">Issues</a></li>
+                                <li><a href="#" class="navigation-menulist-item__links">Marketplace</a></li>
+                                <li><a href="#" class="navigation-menulist-item__links">Explore</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navigation-md-menu">
+                        <span class="iconify md-icons" data-icon="radix-icons:hamburger-menu"></span>
+                    </div>
+                    <a href="" class="navigation-md-menu">
+                        <span class="iconify md-logo" data-icon="octicon:mark-github-16"></span>
+                    </a>
+                    <div class="navigation-icons">
+                        <span class="iconify icons" data-icon="ic:outline-notifications"></span>
+                        <div class="navigation-icons__plus navigation-icons--lg"  id="dropdown" data-filter="addList">
+                            <span class="iconify icons" data-icon="bx:bx-plus" data-filter="addList"></span>
+                            <span class="iconify caret" data-icon="bx:bxs-down-arrow" data-filter="addList"></span>
+
+                            <!-- Dropdown men -->
+                                <div class="dropdown dropdown-add" id="add">
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="dropdown-menu-list">New repository</a></li>
+                                        <li><a href="" class="dropdown-menu-list">Import repository</a></li>
+                                        <li><a href="" class="dropdown-menu-list">New gist</a></li>
+                                        <li><a href="" class="dropdown-menu-list">New organization</a></li>
+                                        <li><a href="" class="dropdown-menu-list">New project</a></li>
+                                    </ul>
+                                </div>
+                            <!-- End ofdropdown men -->
+                        </div>
+                        <div class="navigation-icons__avatar navigation-icons--lg" id="dropdown" data-filter="profileList">
+                            <img src="https://avatars1.githubusercontent.com/u/57262658?s=60&v=4" alt="profile picture" class="profile-picture"  data-filter="profileList"/>
+                            <span class="iconify caret" data-icon="bx:bxs-down-arrow"  data-filter="profileList"></span>
+
+                             <!-- Dropdown men -->
+                             <div class="dropdown dropdown-profile" id="profile">
+                                 <div class="dropdown-user">
+                                     <p class="sign">Signed in as</p>
+                                     <p class="user">Adekeye Adeniyi</p>
+                                 </div>
+                                <div class="divider"></div>
+                                 <div class="dropdown-status">
+                                    <span class="iconify" data-icon="la:smile-solid" data-inline="false"></span> Set status
+                                 </div>
+                                <div class="divider"></div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" class="dropdown-menu-list">Your profile</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Your repositories</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Your projects</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Your star</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Your gists</a></li>
+                                    <li><a href="" class="dropdown-menu-list">New repository</a></li>
+                                </ul>
+                                <div class="divider"></div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" class="dropdown-menu-list">Upgrade</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Feature preview</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Help</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Settings</a></li>
+                                    <li><a href="" class="dropdown-menu-list">Sign out</a></li>
+                                </ul>
+                            </div>
+                        <!-- End ofdropdown men -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium screen menu -->
+                    <div class="navigation-menulist navigation-md">
+                        <form class="form" method="post">
+                            <label for="search" class="search">
+                                <input type="text" class="form-control" name="search" placeholder="Search or jump to ..." />
+                                <img src="https://github.githubassets.com/images/search-key-slash.svg" class="search-icons" alt="icon" />
+                            </label>
+                        </form><br>
+                        <ul class="navigation-menulist-item">
+                            <div class="divider"></div>
+                            <li><a href="#" class="navigation-menulist-item__links">Dashboard</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#" class="navigation-menulist-item__links">Pulls requests</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#" class="navigation-menulist-item__links">Issues</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#" class="navigation-menulist-item__links">Marketplace</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#" class="navigation-menulist-item__links">Explore</a></li>
+                            <div class="divider"></div>
+                        </ul>
+                        <a href="#" class="hr">
+                            <img src="https://avatars1.githubusercontent.com/u/57262658?s=60&v=4" alt="profile picture" class="profile-picture"/>
+                            <span class="user-name"> Adekeye Adeniyi</span>
+                        </a>
+                        <a href="#" class="log">
+                            <span class="iconify" data-icon="teenyicons:logout-solid" data-inline="false"></span>
+                            <span class="logout"> Sign out</span>
+                        </a>
+                    </div>
+                <!-- End Medium screen menu -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+    <!-- ICON  -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- SCRIPT FILE -->
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
